@@ -1,0 +1,39 @@
+# Scan output & reports
+reports/
+*.json
+*.csv
+*.log
+
+# Database / state files
+*.db
+*.sqlite
+redhunter_state*
+envhunter_state*
+
+# Environment & secrets
+.env
+*.env
+config.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
