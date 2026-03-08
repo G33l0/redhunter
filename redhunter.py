@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-╔═════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                     ║
-║  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗    ║
-║  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗   ║
-║  ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝   ║
-║  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗   ║
-║  ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║   ║
-║  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ║
-║                                                                                     ║
-║                      Web Vulnerability & Recon Framework  v1.0                      ║
-║                       Author : g33l0  |  Telegram : @x0x0h33l0                      ║
-╚═════════════════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                    ║
+║  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗   ║
+║  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗  ║
+║  ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝  ║
+║  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗  ║
+║  ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║  ║
+║  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝  ║
+║                                                                                    ║
+║                REDHUNTER — Web Vulnerability & Recon Framework                     ║
+║                     Author : g33l0  |  Telegram : @x0x0h33l0                       ║
+╚════════════════════════════════════════════════════════════════════════════════════╝
 
   AUTHORIZED USE ONLY — For use on systems you own or have explicit
   written authorization to test. Unauthorized use is illegal.
@@ -81,24 +81,24 @@ init(autoreset=True)
 console = Console()
 
 # ─── META ─────────────────────────────────────────────────────────────────────
-VERSION   = "1.1"
+VERSION   = "1.2"
 AUTHOR    = "g33l0"
 TG_HANDLE = "@x0x0h33l0"
 DB_PATH   = "redhunter_state.db"
 
-BANNER = """[bold red]
-╔══════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                      ║
-║    ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗   ║
-║    ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗  ║
-║    ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝  ║
-║    ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗  ║
-║    ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║  ║
-║    ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝  ║
-║                                                                                      ║
-║  [bold white]  ░▒▓ REDHUNTER — Web Vulnerability & Recon Framework  v1.0 ▓▒░  [/bold white][bold red]    ║
-║  [bold yellow]  Author : g33l0[/bold yellow][bold red]  |  [bold green]Telegram : @x0x0h33l0[/bold green][bold red]  |  [dim red]Authorized Use Only[/dim red][bold red]    ║
-╚══════════════════════════════════════════════════════════════════════════════════════╝[/bold red]"""
+BANNER = f"""[bold red]
+╔════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                        ║
+║     ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗    ║
+║     ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗   ║
+║     ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝   ║
+║     ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗   ║
+║     ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║   ║
+║     ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ║
+║                                                                                        ║
+║             [bold white]  ░▒▓ REDHUNTER — Web Vulnerability & Recon Framework  v{VERSION} ▓▒░  [/bold white][bold red]          ║
+║            [bold yellow]  Author : {AUTHOR}[/bold yellow][bold red]  |  [bold green]Telegram : {TG_HANDLE}[/bold green][bold red]  |  [dim red]Authorized Use Only[/dim red][bold red]          ║
+╚════════════════════════════════════════════════════════════════════════════════════════╝[/bold red]"""
 
 # ─── SCAN MODULES ─────────────────────────────────────────────────────────────
 # Each module is a named group of paths. The engine checks ALL enabled modules.
@@ -637,12 +637,20 @@ MODULE_SIGNATURES: dict = {
         r'(?m)^repositoryformatversion\s*=\s*\d',  # .git/config version field
     ],
 
-    # ── Log files: require actual log line format with timestamp/level ───────
+    # ── Log files: require log-level keywords WITH timestamp — blocks JS date matches ──
+    # Bare timestamp pattern matches minified JS (moment.js, analytics bundles).
+    # Require the timestamp to appear WITH a log level keyword on the same line.
     "log_files": [
-        r'\[\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}',
+        # Timestamped log line with severity level — the combination is specific
+        r'\[\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}[^\]]*\]\s*(ERROR|WARNING|WARN|DEBUG|INFO|CRITICAL|FATAL)',
+        # PHP stack trace — specific to error logs
         r'(?i)(Stack\s+trace:|Traceback\s+\(most\s+recent\s+call)',
+        # SQL error — specific to PHP/Laravel/DB logs
         r'(?i)SQLSTATE\[',
-        r'(?i)Illuminate\\(Database|Http|Auth)',
+        # Laravel/PHP namespace in error — backslash namespace format
+        r'(?i)Illuminate\\(Database|Http|Auth)\\',
+        # Apache/Nginx combined log format: IP date "method path" status bytes
+        r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\s+\S+\s+\S+\s+\[[\d/A-Za-z:+ ]+\]\s+"(GET|POST|HEAD)',
     ],
 
     # ── SSH keys: BEGIN header is unmistakable and cannot appear in HTML ──────
@@ -652,21 +660,44 @@ MODULE_SIGNATURES: dict = {
     ],
 
     # ── Package files: require JSON manifest structure ────────────────────────
-    # Split multi-line patterns — literal newlines in r-strings are valid but
-    # must use (?s) or \n explicitly so they work across line boundaries.
+    # "name":"..." alone matches ANY JSON API (user profiles, REST responses).
+    # Must require EITHER "dependencies":{} (npm) or "require":{"php": (composer)
+    # combined with version — these ONLY appear in real package manifests.
     "package_files": [
-        r'"name"\s*:\s*"[\w@/\-\.]+"\s*,',
-        r'"version"\s*:\s*"\d+\.\d+',
-        r'"dependencies"\s*:\s*\{',
-        r'"require"\s*:\s*\{\s*"php"\s*:',
+        r'"dependencies"\s*:\s*\{',                     # npm package.json
+        r'"devDependencies"\s*:\s*\{',                  # npm dev deps
+        r'"require"\s*:\s*\{\s*"php"\s*:',              # composer.json
+        r'"require-dev"\s*:\s*\{',                      # composer dev
+        r'"lockfileVersion"\s*:\s*\d',                  # package-lock.json
+        r'"packages"\s*:\s*\{\s*""\s*:\s*\[',           # composer.lock root
     ],
 
     # ── DevOps files: docker-compose/Dockerfile specific syntax ──────────────
+    # Removed: "services:$" alone — matches k8s, Ansible, custom YAML.
+    # Require "services:" COMBINED with docker-compose-specific keys beneath it,
+    # or Dockerfile instructions that are unambiguous.
     "devops_files": [
-        r'(?m)^services:\s*$',
-        r'(?m)^FROM\s+\S+',
-        r'(?m)^(RUN|ENV|COPY|ARG|EXPOSE)\s+\S',
-        r'(?im)(DOCKER_PASSWORD|REGISTRY_TOKEN|CI_TOKEN|VAULT_ADDR)',
+        # docker-compose: services block followed by image/build/ports child keys
+        r'(?m)^services:\s*\n(\s+\S+:\s*\n)?\s+(image|build|ports|environment|volumes|depends_on)\s*:',
+        # Dockerfile: FROM instruction is highly specific
+        r'(?m)^FROM\s+([\w./:-]+)\s*(AS\s+\w+)?\s*$',
+        # Dockerfile RUN/ENV/COPY/ARG — require at least one of these
+        r'(?m)^(RUN|ENV|COPY|ARG|EXPOSE|ENTRYPOINT|CMD)\s+\S',
+        # CI/DevOps credential vars embedded in compose/dockerfile
+        r'(?im)(DOCKER_PASSWORD|REGISTRY_TOKEN|CI_TOKEN|VAULT_ADDR)\s*[=:]',
+    ],
+
+    # ── Server status: Apache/Nginx/Spring specific output format ────────────
+    # Tightened: "status":"UP","components" is broad enough for Spring Actuator
+    # specifically because "components" is Actuator-specific. Keep as-is but
+    # add a note — this is a true positive for Actuator health endpoint.
+    "server_status": [
+        r'(?i)(Apache\s+Server\s+Status|Requests\s+currently\s+being\s+processed)',
+        r'(?i)(Active\s+connections:\s*\d|server\s+accepts\s+handled\s+requests)',
+        # Spring Actuator /health: "components" key is unique to Actuator format
+        r'(?i)"status"\s*:\s*"(UP|DOWN|OUT_OF_SERVICE)"\s*,\s*"components"\s*:',
+        # Spring Actuator /health with diskSpace or db components
+        r'(?i)("diskSpace"\s*:\s*\{\s*"status"|"db"\s*:\s*\{\s*"status")',
     ],
 
     # ── API docs: Swagger/OpenAPI JSON document structure ────────────────────
@@ -694,57 +725,83 @@ MODULE_SIGNATURES: dict = {
 
     # ── NEW modules ──────────────────────────────────────────────────────────
 
-    # Cloud metadata: AWS/GCP/Azure IMDS responses have unique JSON structure
+    # Cloud metadata: AWS/GCP/Azure IMDS responses have unique JSON structure.
+    # STRICT: removed "token_type":"Bearer" — matches ANY OAuth API response.
+    # AWS credentials file uses \n — requires re.DOTALL or (?s); use [\s\S] instead.
     "cloud_metadata": [
-        r'"instanceId"\s*:\s*"i-[0-9a-f]{8,17}"',      # AWS instance ID
-        r'"availabilityZone"\s*:\s*"[a-z]+-[a-z]+-\d[a-z]"',  # AWS AZ
-        r'"serviceAccounts"\s*:\s*\{',                   # GCP service accounts
-        r'"access_token"\s*:\s*"ya29\.',                 # GCP OAuth token
-        r'"subscriptionId"\s*:\s*"[0-9a-f-]{36}"',      # Azure subscription
-        r'\[default\]\s*\naws_access_key_id',            # AWS credentials file
-        r'ASIA[A-Z0-9]{16}|AKIA[A-Z0-9]{16}',           # AWS key prefixes
-        r'"token_type"\s*:\s*"Bearer"',                  # Bearer token in metadata
+        r'"instanceId"\s*:\s*"i-[0-9a-f]{8,17}"',           # AWS EC2 instance ID
+        r'"availabilityZone"\s*:\s*"[a-z]+-[a-z]+-\d[a-z]"',  # AWS AZ format
+        r'"serviceAccounts"\s*:\s*\{',                        # GCP IMDS service accounts
+        r'"access_token"\s*:\s*"ya29\.',                      # GCP OAuth token prefix (unique)
+        r'"subscriptionId"\s*:\s*"[0-9a-f-]{36}"',           # Azure subscription UUID
+        r'(?m)^\[default\][\s\S]{0,60}aws_access_key_id',    # AWS credentials file [default] section
+        r'AKIA[A-Z0-9]{16}|ASIA[A-Z0-9]{16}',                # AWS access key ID prefixes
+        r'"iamInstanceProfile"\s*:\s*\{',                    # AWS IAM instance profile (unique)
+        r'"computeMetadata"\s*/\s*v[12]',                    # GCP metadata server path
     ],
 
-    # Exposed secrets: credential file formats
+    # Exposed secrets: credential file formats.
+    # STRICT: removed generic "^password\s*=\s*\S{4,}" — too broad, matches
+    # mysql.cnf, php.ini, configparser files, etc. Use only highly-specific formats.
     "exposed_secrets": [
         r'"type"\s*:\s*"service_account"',              # GCP service account JSON
-        r'"private_key_id"\s*:\s*"[0-9a-f]{40}"',      # GCP private key ID
-        r'"client_email"\s*:\s*"[^@"]+@[^"]+\.iam\.gserviceaccount\.com"',
-        r'machine\s+\S+\s+login\s+\S+\s+password\s+\S+',  # .netrc format
-        r'AKIA[A-Z0-9]{16}|ASIA[A-Z0-9]{16}',           # AWS access key
-        r'"sftp".*"host"\s*:\s*"[^"]+".*"user"',        # SFTP config
-        r'define_host\s*,\s*"[^"]+",\s*\d+',            # FTP credentials
-        r'(?im)^password\s*=\s*\S{4,}',                 # Generic password=value
+        r'"private_key_id"\s*:\s*"[0-9a-f]{40}"',      # GCP private key ID (40-char hex)
+        r'"client_email"\s*:\s*"[^@"]+@[^"]+\.iam\.gserviceaccount\.com"',  # GCP email format
+        r'(?m)^machine\s+\S+\s+login\s+\S+\s+password\s+\S+',  # .netrc exact format
+        r'AKIA[A-Z0-9]{16}|ASIA[A-Z0-9]{16}',           # AWS access key ID prefixes
+        r'"sftp"\s*:\s*\{[^}]*"host"\s*:\s*"[^"]+"[^}]*"user"\s*:',  # Sublime SFTP JSON
+        r'define_host\s*,\s*"[^"]+",\s*\d+',            # FTP credential format
+        # Require BOTH private_key and project_id in the same JSON — unique to GCP SA
+        r'"private_key"\s*:\s*"-----BEGIN (RSA |EC )?PRIVATE',
     ],
 
-    # CI/CD: pipeline syntax unique to each system
+    # CI/CD: pipeline syntax unique to each system.
+    # STRICT: avoid matching generic YAML. Require CI-specific keys or credentials.
+    # Removed: "stages:$", "jobs:$", "steps:$" — too broad (any YAML).
+    # Removed: "- deploy:" — matches Ansible task lists too.
     "cicd_exposure": [
-        r'(?m)^(stages|jobs|pipeline|steps|script|deploy):\s*$',  # YAML pipeline keys
-        r'(?m)^\s+- (deploy|build|test|release):',
-        r'(?i)(CI_TOKEN|DEPLOY_KEY|NPM_TOKEN|DOCKER_PASSWORD|REGISTRY_PASS)\s*:',
-        r'(?m)^on:\s*\n\s+(push|pull_request):',        # GitHub Actions trigger
-        r'(?i)pipeline\s*\{\s*\nagent',                  # Jenkinsfile
-        r'aws ecr get-login|docker push|kubectl apply',  # Deploy commands in CI
+        # GitHub Actions trigger block — unique two-line pattern
+        r'(?m)^on:\s*\n\s+(push|pull_request|workflow_dispatch|release):',
+        # Jenkinsfile declarative pipeline syntax — unique curly-brace agent block
+        r'(?i)pipeline\s*\{\s*\n\s*agent\s+',
+        # Explicit CI credential variable names (specific enough)
+        r'(?i)(CI_TOKEN|DEPLOY_KEY|NPM_TOKEN|DOCKER_PASSWORD|REGISTRY_PASS|HEROKU_API_KEY)\s*:',
+        # Cloud deploy commands embedded in CI scripts
+        r'(?m)^\s+[-]\s+(aws ecr|docker push|kubectl apply|helm upgrade|gcloud deploy)',
+        # Travis CI header — unique marker
+        r'(?m)^language:\s*(node_js|python|ruby|php|go|java)\s*$',
+        # CircleCI config version field — unique to CircleCI
+        r'(?m)^version:\s*["\']?2\.[01]["\']?\s*\norbs:',
+        # Bitbucket pipelines — unique structure
+        r'(?m)^pipelines:\s*\n\s+(branches|default|pull-requests|custom):',
     ],
 
-    # Kubernetes: k8s YAML manifest structure
+    # Kubernetes: k8s YAML manifest structure.
+    # STRICT: require the apiVersion+kind combination which is unique to k8s.
+    # Removed: "namespace:$", "image:\s*..." — too broad across YAML files.
     "kubernetes": [
-        r'(?m)^apiVersion:\s*(v1|apps/v1|batch/v1)',
-        r'(?m)^kind:\s*(Deployment|Service|ConfigMap|Secret|Ingress|Pod)',
-        r'(?m)^  namespace:\s*\S+',
-        r'(?i)secretKeyRef|configMapKeyRef',
-        r'(?i)image:\s*[a-z0-9]+[a-z0-9._\-/]+:\S+',   # Container image ref
+        # apiVersion is the strongest single k8s indicator — no other YAML uses this
+        r'(?m)^apiVersion:\s*(v1|apps/v1|batch/v1|rbac\.authorization\.k8s\.io/v1|networking\.k8s\.io/v1)',
+        # kind: + k8s resource type — only valid in k8s manifests
+        r'(?m)^kind:\s*(Deployment|StatefulSet|DaemonSet|ReplicaSet|Job|CronJob|ConfigMap|Secret|Ingress|Service|ServiceAccount|ClusterRole|Role|PersistentVolumeClaim)',
+        # Secret/ConfigMap key reference — k8s-only syntax inside container specs
+        r'(?i)(secretKeyRef|configMapKeyRef)\s*:',
+        # k8s Secret data block with base64 values
+        r'(?m)^(type:\s*kubernetes\.io/(tls|service-account-token|dockerconfigjson)|data:\s*\n\s+\S+:\s*[A-Za-z0-9+/=]{20,})',
     ],
 
     # Database exposure: config file formats
+    # STRICT: avoid matching normal auth APIs, login forms, or any JSON with email/password.
+    # "password":"..." alone matches every login form API. Must require DB-specific context.
     "database_exposure": [
-        r'(?im)^(host|bind-address|port|user|password)\s*=\s*\S',  # MySQL/Redis conf
-        r'(?im)^(listen_addresses|max_connections|shared_buffers)\s*=',  # Postgres
-        r'"email"\s*:\s*"[^"]+@[^"]+\.[^"]{2,}"',      # User data in JSON
-        r'(?i)(INSERT INTO users|INSERT INTO accounts|email,password)',
-        r'"password"\s*:\s*"[^"]{4,}"',                 # Password in JSON
-        r'(?m)^host\s+all\s+all\s+',                    # pg_hba.conf host rule
+        r'(?im)^bind-address\s*=\s*\S',                 # MySQL my.cnf — unique DB config key
+        r'(?im)^(innodb_buffer_pool_size|max_allowed_packet)\s*=',  # MySQL-specific settings
+        r'(?im)^(listen_addresses|max_connections|shared_buffers)\s*=',  # Postgres postgresql.conf
+        r'(?im)^(requirepass|maxmemory|appendonly)\s+\S',  # Redis redis.conf
+        r'(?i)(INSERT INTO users|INSERT INTO accounts|INSERT INTO customers)',  # SQL user dumps
+        r'(?i)email,password\s*\n',                      # CSV header with email+password column
+        r'(?m)^host\s+all\s+all\s+',                    # pg_hba.conf host ACL rule
+        r'(?im)^(cluster\.name|network\.host)\s*:',     # Elasticsearch config
     ],
 }
 FP_MARKERS = [
@@ -791,20 +848,27 @@ _SENS_RE_COMPILED = {cat: re.compile(pat) for cat, pat in SENSITIVE_PATTERNS.ite
 
 # (Pre-compiled regexes are defined below, after _strip_inline_flags is declared)
 
-# Pre-compiled soft-404 detector — avoids recompiling on every _fetch_page call
-# Each sub-pattern joined with | — re.IGNORECASE as compile flag (Windows Python 3.12 safe)
+# Pre-compiled soft-404 / block-page detector
+# Covers: custom 404 pages, CDN/WAF block pages that return HTTP 200,
+# "Access Denied" responses from security middleware.
 _SOFT_404_RE = re.compile(
-    r'<title>[^<]*(404|not.?found|page.?not.?found|error)[^<]*</title>'
+    r'<title>[^<]*(404|not.?found|page.?not.?found|error|access.?denied|forbidden|blocked)[^<]*</title>'
     r'|(the page you (are looking for|requested) (could not be found|does not exist))'
     r'|(404\s*[-–—]\s*(not found|page not found|file not found))'
-    r'|(\b404\s+not\s+found\b)'                          # bare '404 Not Found'
-    r'|(page\s+not\s+found\b)'                            # 'Page Not Found | Title'
+    r'|(\b404\s+not\s+found\b)'
+    r'|(page\s+not\s+found\b)'
     r'|(this page (doesn.t|does not) exist)'
-    r'|(sorry[,.]?\s+that page (doesn.t|does not) exist)'  # 'Sorry, that page doesn\'t exist'
+    r'|(sorry[,.]?\s+that page (doesn.t|does not) exist)'
     r'|(oops[.!]?\s+(something went wrong|page not found|we can.t find|couldn.t find))'
-    r'|(oops[!.]+\s+we\s+couldn.t\s+find)'               # 'Oops! We couldn\'t find'
+    r'|(oops[!.]+\s+we\s+couldn.t\s+find)'
     r'|(no\s+such\s+file\s+or\s+directory)'
-    r'|(<h[12][^>]*>\s*(404|page\s+not\s+found|not\s+found)[^<]*</h[12]>)',
+    r'|(<h[12][^>]*>\s*(404|page\s+not\s+found|not\s+found)[^<]*</h[12]>)'
+    # WAF/CDN block pages that return HTTP 200 but deny access
+    r'|(access\s+denied[^<]{0,80}(cloudflare|firewall|waf|security|blocked))'
+    r'|(your\s+(ip|request|access)\s+(has\s+been\s+blocked|is\s+not\s+allowed))'
+    r'|(this\s+(request|page|site)\s+(has\s+been\s+blocked|is\s+(forbidden|restricted|not\s+accessible)))'
+    r'|(<title>[^<]*(403|forbidden|access\s+denied)[^<]*</title>)'
+    r'|(error\s+code[:\s]+403\b)',
     re.IGNORECASE
 )
 
@@ -1584,6 +1648,28 @@ class StateDB:
             self.conn.commit()
             return cur.rowcount > 0
 
+    def mark_seen_vuln_atomic(self, vf: "VulnFinding") -> bool:
+        """
+        Atomically record a vuln finding. Returns True if it was NEW.
+        Fingerprint = target + plugin + cve — ensures each CVE fires once per
+        target per monitoring cycle (avoids alert fatigue on repeated scans).
+        """
+        raw = f"{vf.target}|vuln|{vf.plugin}|{vf.cve}"
+        fp  = hashlib.sha256(raw.encode()).hexdigest()
+        now = datetime.now(timezone.utc).isoformat()
+        with self.lock:
+            cur = self.conn.execute("""
+                INSERT OR IGNORE INTO seen_findings
+                    (fingerprint, url, risk_level, categories, kind, first_seen, last_seen)
+                VALUES (?, ?, ?, ?, 'vuln', ?, ?)
+            """, (fp, vf.target, vf.severity, f"{vf.cve} — {vf.plugin}", now, now))
+            if cur.rowcount == 0:
+                self.conn.execute(
+                    "UPDATE seen_findings SET last_seen=? WHERE fingerprint=?", (now, fp)
+                )
+            self.conn.commit()
+            return cur.rowcount > 0
+
     def close(self):
         try:
             self.conn.close()
@@ -1779,55 +1865,99 @@ class AssetDiscovery:
 
 # ─── TELEGRAM NOTIFIER ────────────────────────────────────────────────────────
 class TelegramNotifier:
+    # Telegram HTML mode only allows: <b> <i> <code> <pre> <a> <s> <u>
+    # All user-supplied strings MUST be escaped before insertion.
+    # Max message length: 4096 chars — anything over is silently rejected by Telegram.
+    _TG_MAX_LEN   = 4000   # 4096 minus safety margin for footer
+    _TG_RATE_DELAY = 0.05  # 50ms between sends = max 20 msg/s (Telegram limit: 30/s)
+
     def __init__(self, bot_token: str, chat_id: str):
-        self.bot_token = bot_token
-        self.chat_id   = chat_id
-        self._base     = f"https://api.telegram.org/bot{bot_token}"
+        self.bot_token  = bot_token
+        self.chat_id    = chat_id
+        self._base      = f"https://api.telegram.org/bot{bot_token}"
+        self._last_send = 0.0   # monotonic time of last successful send
+        self._lock      = threading.Lock()  # serialize rate-limit check
+
+    @staticmethod
+    def _e(text: str) -> str:
+        """
+        HTML-escape a string for safe insertion into Telegram HTML messages.
+        Telegram HTML mode requires & < > to be escaped.
+        Called on EVERY user-supplied value before it enters a message string.
+        """
+        return (str(text)
+                .replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;"))
 
     def _send(self, text: str) -> bool:
+        """
+        Send a single Telegram message. Thread-safe, rate-limited.
+        Error logging goes to stderr — NOT the Rich console — because Rich is
+        not thread-safe when called from a background thread during Progress rendering.
+        """
+        # Enforce rate limit — Telegram allows ~30 msg/s, we use 20/s max
+        with self._lock:
+            elapsed = time.monotonic() - self._last_send
+            if elapsed < self._TG_RATE_DELAY:
+                time.sleep(self._TG_RATE_DELAY - elapsed)
+
+        # Hard length guard — Telegram silently drops messages over 4096 chars
+        if len(text) > self._TG_MAX_LEN:
+            text = text[:self._TG_MAX_LEN] + "\n<i>… [message truncated]</i>"
+
         try:
             resp = requests.post(
                 f"{self._base}/sendMessage",
                 json={"chat_id": self.chat_id, "text": text, "parse_mode": "HTML"},
                 timeout=15
             )
-            if resp.status_code != 200:
-                console.print(f"[red]  [!] Telegram HTTP {resp.status_code}: {resp.text[:100]}[/red]")
-                return False
-            return True
+            with self._lock:
+                self._last_send = time.monotonic()
+            if resp.status_code == 200:
+                return True
+            # Log failure to stderr (safe from any thread, doesn't touch Rich)
+            import sys as _sys
+            print(
+                f"[RedHunter] Telegram HTTP {resp.status_code}: {resp.text[:120]}",
+                file=_sys.stderr
+            )
+            return False
         except requests.exceptions.ConnectionError:
-            console.print("[red]  [!] Telegram: Network unreachable.[/red]")
+            import sys as _sys
+            print("[RedHunter] Telegram: network unreachable.", file=_sys.stderr)
         except requests.exceptions.Timeout:
-            console.print("[red]  [!] Telegram: Request timed out.[/red]")
+            import sys as _sys
+            print("[RedHunter] Telegram: request timed out.", file=_sys.stderr)
         except Exception as e:
-            console.print(f"[red]  [!] Telegram: {e}[/red]")
+            import sys as _sys
+            print(f"[RedHunter] Telegram error: {e}", file=_sys.stderr)
         return False
 
-    def send_finding(self, env: ExposedEnv, target: str, is_new: bool = True) -> bool:
+    def send_finding(self, env: "ExposedEnv", target: str, is_new: bool = True) -> bool:
         emoji = {"CRITICAL": "🔴", "HIGH": "🟠", "MEDIUM": "🟡", "LOW": "🟢"}.get(env.risk_level, "⚪")
         now_ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
         badge = "🆕 <b>NEW FINDING</b>\n" if is_new else "🔄 <b>RE-SCAN MATCH</b>\n"
-        # Risk context for .env findings
         env_context_map = {
-            "CRITICAL": "Real credentials/keys confirmed in this file — attacker can use these directly.",
+            "CRITICAL": "Real credentials/keys confirmed — attacker can use these directly.",
             "HIGH":     "Payment or mail credentials exposed — financial or communication risk.",
             "MEDIUM":   "General secrets present — lower impact but still sensitive.",
             "LOW":      "File accessible but no sensitive keywords matched — review manually.",
         }
         env_context = env_context_map.get(env.risk_level, "")
         if env.findings:
-            cats = "\n".join(f"  • <code>{c}</code>" for c in env.findings.keys())
+            cats = "\n".join(f"  • <code>{self._e(c)}</code>" for c in env.findings.keys())
         else:
             cats = "  • <i>No sensitive keywords matched</i>"
         msg = (
             f"{badge}"
-            f"{emoji} <b>.env Exposed — {env.risk_level}</b>\n"
+            f"{emoji} <b>.env Exposed — {self._e(env.risk_level)}</b>\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
-            f"🎯 <b>Target:</b> <code>{target}</code>\n"
-            f"🔗 <b>URL:</b> <code>{env.url}</code>\n"
-            f"📊 <b>HTTP:</b> {env.status_code}  |  📏 <b>Size:</b> {env.content_length}B\n"
+            f"🎯 <b>Target:</b> <code>{self._e(target)}</code>\n"
+            f"🔗 <b>URL:</b> <code>{self._e(env.url)}</code>\n"
+            f"📊 <b>HTTP:</b> {self._e(env.status_code)}  |  📏 <b>Size:</b> {self._e(env.content_length)}B\n"
             f"⏱ <b>Found at:</b> {now_ts}\n"
-            f"\n{emoji} <b>Risk [{env.risk_level}]:</b> <i>{env_context}</i>\n"
+            f"\n{emoji} <b>Risk [{self._e(env.risk_level)}]:</b> <i>{self._e(env_context)}</i>\n"
             f"\n🔑 <b>Secrets Detected:</b>\n{cats}\n"
             f"\n<i>RedHunter v{VERSION} | {AUTHOR} | {TG_HANDLE}</i>"
         )
@@ -1838,7 +1968,6 @@ class TelegramNotifier:
         pages     = stats.get("pages_found", 0)
         critical  = stats.get("critical", 0)
         new_finds = stats.get("new_findings", 0)
-        # Status line: highlight if anything found
         if critical > 0:
             headline = f"🔴 <b>CRITICAL FINDINGS — {critical} critical items</b>"
         elif new_finds > 0:
@@ -1863,54 +1992,59 @@ class TelegramNotifier:
         )
         return self._send(msg)
 
-    def send_page_finding(self, page, target: str) -> bool:
+    def send_page_finding(self, page: "ExposedPage", target: str) -> bool:
         emoji  = {"CRITICAL": "🔴", "HIGH": "🟠", "MEDIUM": "🟡", "LOW": "🟢"}.get(page.risk_level, "⚪")
         now_ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-        ev     = "\n".join(f"  • <code>{e}</code>" for e in page.evidence[:5]) or "  • <i>Confirmed accessible</i>"
-        # Risk context: explains what this finding actually means
+        # Evidence lines come from raw HTTP responses — MUST be escaped
+        ev = "\n".join(
+            f"  • <code>{self._e(e[:100])}</code>" for e in page.evidence[:4]
+        ) or "  • <i>Confirmed accessible</i>"
         context_map = {
-            "CRITICAL": ("🚨 URGENT", "Credentials or sensitive data directly readable — no authentication required. Immediate action needed."),
-            "HIGH":     ("⚠️ HIGH",   "Sensitive structure exposed — source code, configs or secrets likely present. Manual inspection recommended."),
-            "MEDIUM":   ("🔵 MEDIUM", "Login interface publicly reachable — an attacker still needs valid credentials to exploit this."),
-            "LOW":      ("ℹ️ INFO",   "Version or schema disclosure only — no direct credential exposure, but useful for attacker reconnaissance."),
+            "CRITICAL": ("🚨 URGENT",   "Credentials or sensitive data directly readable — no authentication required."),
+            "HIGH":     ("⚠️ HIGH",     "Sensitive structure exposed — source code, configs or secrets likely present."),
+            "MEDIUM":   ("🔵 MEDIUM",   "Login interface publicly reachable — attacker still needs valid credentials."),
+            "LOW":      ("ℹ️ INFO",     "Version or schema disclosure only — useful for attacker reconnaissance."),
         }
         sev_label, context = context_map.get(page.risk_level, ("", ""))
         msg = (
-            f"🆕 <b>NEW FINDING — {sev_label}</b>\n"
-            f"{emoji} <b>{page.label}</b>\n"
+            f"🆕 <b>NEW FINDING — {self._e(sev_label)}</b>\n"
+            f"{emoji} <b>{self._e(page.label)}</b>\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
-            f"🎯 <b>Target:</b> <code>{target}</code>\n"
-            f"🔗 <b>URL:</b> <code>{page.url}</code>\n"
-            f"📊 <b>HTTP:</b> {page.status_code}  |  📏 <b>Size:</b> {page.content_length}B\n"
+            f"🎯 <b>Target:</b> <code>{self._e(target)}</code>\n"
+            f"🔗 <b>URL:</b> <code>{self._e(page.url)}</code>\n"
+            f"📊 <b>HTTP:</b> {self._e(page.status_code)}  |  📏 <b>Size:</b> {self._e(page.content_length)}B\n"
             f"⏱ <b>Found at:</b> {now_ts}\n"
-            f"\n{emoji} <b>Risk [{page.risk_level}]:</b> <i>{context}</i>\n"
+            f"\n{emoji} <b>Risk [{self._e(page.risk_level)}]:</b> <i>{self._e(context)}</i>\n"
             f"\n🔍 <b>Evidence:</b>\n{ev}\n"
             f"\n<i>RedHunter v{VERSION} | {AUTHOR} | {TG_HANDLE}</i>"
         )
         return self._send(msg)
 
-
     def send_vuln_finding(self, vf: "VulnFinding") -> bool:
         """Send Telegram alert for a confirmed vulnerable plugin surface."""
-        emoji = {"CRITICAL": "🔴", "HIGH": "🟠", "MEDIUM": "🟡", "LOW": "🟢"}.get(vf.severity, "⚪")
+        emoji  = {"CRITICAL": "🔴", "HIGH": "🟠", "MEDIUM": "🟡", "LOW": "🟢"}.get(vf.severity, "⚪")
         now_ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-        refs = "\n".join(f"  • {r}" for r in vf.references[:3]) or "  • No public references"
-        surface_line = f"\n🔌 <b>Surface URL:</b> <code>{vf.surface_url}</code>" if vf.surface_url else ""
+        refs   = "\n".join(f"  • {self._e(r)}" for r in vf.references[:3]) or "  • No public references"
+        surface_line = (
+            f"\n🔌 <b>Surface URL:</b> <code>{self._e(vf.surface_url)}</code>"
+            if vf.surface_url else ""
+        )
+        # All dynamic content escaped — descriptions often contain "<" (e.g. "version < 6.9")
         msg = (
             f"🆕 <b>VULNERABILITY DETECTED</b>\n"
-            f"{emoji} <b>{vf.severity} — {vf.cve}</b>\n"
+            f"{emoji} <b>{self._e(vf.severity)} — {self._e(vf.cve)}</b>\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
-            f"🎯 <b>Target:</b> <code>{vf.target}</code>\n"
-            f"🔌 <b>Plugin:</b> <code>{vf.plugin}</code>\n"
-            f"📦 <b>Installed:</b> v{vf.installed_version}  →  "
-            f"<b>Fixed in:</b> v{vf.fixed_in}\n"
-            f"📊 <b>CVSS:</b> {vf.cvss}  |  🏷 <b>Surface:</b> {vf.surface}\n"
+            f"🎯 <b>Target:</b> <code>{self._e(vf.target)}</code>\n"
+            f"🔌 <b>Plugin:</b> <code>{self._e(vf.plugin)}</code>\n"
+            f"📦 <b>Installed:</b> v{self._e(vf.installed_version)}  →  "
+            f"<b>Fixed in:</b> v{self._e(vf.fixed_in)}\n"
+            f"📊 <b>CVSS:</b> {self._e(vf.cvss)}  |  🏷 <b>Surface:</b> {self._e(vf.surface)}\n"
             f"⏱ <b>Detected:</b> {now_ts}\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
-            f"📋 <b>Title:</b> {vf.title}\n"
-            f"\n📝 <b>Description:</b>\n<i>{vf.description[:400]}</i>\n"
+            f"📋 <b>Title:</b> {self._e(vf.title)}\n"
+            f"\n📝 <b>Description:</b>\n<i>{self._e(vf.description[:350])}</i>\n"
             f"{surface_line}\n"
-            f"\n✅ <b>Recommended Action:</b>\n<i>{vf.recommend}</i>\n"
+            f"\n✅ <b>Recommended Action:</b>\n<i>{self._e(vf.recommend)}</i>\n"
             f"\n🔗 <b>References:</b>\n{refs}\n"
             f"\n<i>RedHunter v{VERSION} | {AUTHOR} | {TG_HANDLE}</i>"
         )
@@ -1919,7 +2053,7 @@ class TelegramNotifier:
     def test_connection(self) -> bool:
         return self._send(
             f"✅ <b>RedHunter v{VERSION}</b> — Telegram integration active.\n"
-            f"Authored by {AUTHOR} | {TG_HANDLE}"
+            f"Authored by {self._e(AUTHOR)} | {self._e(TG_HANDLE)}"
         )
 
 
@@ -2065,15 +2199,24 @@ class RedHunter:
         # Primary check: 2+ real KEY=VALUE lines (standard .env)
         if len(actual) >= 2:
             return True
-        # Secondary check: even 1 line is enough if it matches a known
-        # secret pattern AND the value is not a placeholder.
-        # e.g. DB_PASSWORD=realSecret99! → True
-        #      SECRET_KEY=your-secret-key-here → False (_is_fp catches it)
+        # Secondary check: 1 line is enough ONLY if it:
+        #   1. Matches a known secret pattern name
+        #   2. Uses strict KEY=VALUE format (not shell export/assignment)
+        #   3. Is not itself a placeholder
+        # Reject common non-.env formats that can produce single KEY=VALUE lines:
+        #   - Shell: export FOO=bar, declare FOO=bar, readonly FOO=bar
+        #   - INI: [section]\npassword=value (handled by raw_file_modules HTML guard)
         if len(actual) == 1:
+            line = actual[0]
+            # Reject shell assignment prefixes
+            if re.search(r'(?i)^\s*(export|declare|readonly|set|local)\s+', line):
+                return False
             high_signal = re.search(
-                r'(?i)(password|secret|api_key|apikey|token|private_key'
-                r'|stripe|aws_secret|jwt|auth_key|access_key)',
-                actual[0]
+                r'(?i)(DB_PASSWORD|DB_PASS|DATABASE_PASSWORD|'
+                r'APP_KEY|SECRET_KEY|API_KEY|JWT_SECRET|ACCESS_TOKEN|'
+                r'PRIVATE_KEY|STRIPE_KEY|STRIPE_SECRET|AWS_SECRET|'
+                r'SMTP_PASS|MAIL_PASSWORD|SENDGRID_API)',
+                line
             )
             if not high_signal:
                 return False
@@ -2422,7 +2565,9 @@ class RedHunter:
         return None
 
     def _tg_drain(self):
-        """Background thread: sends Telegram notifications without blocking scan threads."""
+        """Background thread: sends Telegram notifications without blocking scan threads.
+        Errors go to stderr — NOT the Rich console — because Rich is not thread-safe
+        when called from a background thread during Progress rendering."""
         while True:
             item = self._tg_queue.get()
             if item is None:
@@ -2431,8 +2576,11 @@ class RedHunter:
             fn, args, kwargs = item
             try:
                 fn(*args, **kwargs)
-            except Exception:
-                pass
+            except Exception as _tg_exc:
+                # Bare except is intentional: this thread MUST NOT crash.
+                # Log to stderr (safe from any thread) — not Rich which is not thread-safe.
+                import sys as _sys
+                print(f"[RedHunter] TG worker error: {_tg_exc}", file=_sys.stderr)
             finally:
                 self._tg_queue.task_done()
 
@@ -2517,10 +2665,13 @@ class RedHunter:
                         rc = {"CRITICAL":"red","HIGH":"yellow","MEDIUM":"cyan","LOW":"green"}.get(env.risk_level,"white")
                         badge = "[bold green][NEW][/bold green]   " if is_new else "[dim][KNOWN][/dim] "
                         self._print_queue.put(f"  {badge}[bold {rc}]✓ .env [{env.risk_level}] {url}[/bold {rc}]")
-                    if self.notifier and is_new and env.risk_level != "LOW":
-                        self._tg_notify(self.notifier.send_finding, env, target, is_new=True)
+                    if is_new:
+                        # Count ALL new .env findings regardless of risk or notifier state
                         with self.lock:
                             self.stats["new_findings"] += 1
+                        # Alert only for MEDIUM+ risk (LOW .env = no real secrets found)
+                        if self.notifier and env.risk_level != "LOW":
+                            self._tg_notify(self.notifier.send_finding, env, target, is_new=True)
                     return ("env", env)
                 else:
                     page = self._fetch_page(url, module)
@@ -2583,17 +2734,20 @@ class RedHunter:
                 vr = vs.run(target)
                 for vf in vr.get("vuln_findings", []):
                     result.vuln_results.append(vf)
+                    is_new_vuln = self.state_db.mark_seen_vuln_atomic(vf)
                     with self.lock:
                         self.stats["vulns_found"] += 1
                         if vf.severity == "CRITICAL":
                             self.stats["vuln_critical"] += 1
                     if self.args.verbose:
                         sc = {"CRITICAL":"red","HIGH":"yellow","MEDIUM":"cyan","LOW":"green"}.get(vf.severity,"white")
+                        badge = "[bold green][NEW][/bold green]   " if is_new_vuln else "[dim][KNOWN][/dim] "
                         self._print_queue.put(
-                            f"  [bold {sc}][VULN] {vf.severity} {vf.cve} — "
+                            f"  {badge}[bold {sc}][VULN] {vf.severity} {vf.cve} — "
                             f"{vf.plugin} v{vf.installed_version}[/bold {sc}]"
                         )
-                    if self.notifier:
+                    # Only alert Telegram for NEW vuln findings — avoids alert fatigue
+                    if self.notifier and is_new_vuln:
                         self._tg_notify(self.notifier.send_vuln_finding, vf)
                 result.ajax_surfaces = vr.get("ajax_surfaces", {})
                 result.xmlrpc        = vr.get("xmlrpc")
@@ -3039,8 +3193,8 @@ class Reporter:
                 f.write("=" * 70 + "\n\n")
                 exposed_count = 0
                 for r in self.results:
-                    # BUG 7 FIX: include targets with page findings even if no .env
-                    if not r.exposed_envs and not r.exposed_pages:
+                    # Include targets with ANY finding: env, page, OR vuln
+                    if not r.exposed_envs and not r.exposed_pages and not getattr(r, "vuln_results", []):
                         continue
                     exposed_count += 1
                     f.write(f"TARGET: {r.target}  [source: {r.source}]\n")
@@ -3065,6 +3219,16 @@ class Reporter:
                         f.write(f"  Risk Level: {page.risk_level}\n")
                         for ev in page.evidence:
                             f.write(f"    → {ev}\n")
+                        f.write("\n")
+                    # Vulnerability findings
+                    for vf in getattr(r, "vuln_results", []):
+                        f.write(f"  [VULNERABILITY] {vf.severity} — {vf.cve}\n")
+                        f.write(f"  Plugin:   {vf.plugin} v{vf.installed_version}\n")
+                        f.write(f"  Fixed In: v{vf.fixed_in}\n")
+                        f.write(f"  CVSS:     {vf.cvss}\n")
+                        f.write(f"  Title:    {vf.title}\n")
+                        f.write(f"  Surface:  {vf.surface_url or 'not confirmed'}\n")
+                        f.write(f"  Action:   {vf.recommend}\n")
                         f.write("\n")
                 if exposed_count == 0:
                     f.write("No exposures found.\n")
@@ -3124,7 +3288,7 @@ class Reporter:
         if not page_rows:
             page_rows = "<tr><td colspan='6' style='text-align:center;color:#6e7681'>Web exposure scan: No exposures found.</td></tr>"
 
-        html = f"""<!DOCTYPE html>
+        html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -3202,7 +3366,7 @@ class Reporter:
 </html>"""
         try:
             with open(path, "w", encoding="utf-8") as f:
-                f.write(html)
+                f.write(html_content)
             console.print(f"[bold green]✔[/bold green] HTML → [cyan]{path}[/cyan]")
         except OSError as e:
             console.print(f"[red]  [!] Could not write HTML: {e}[/red]")
