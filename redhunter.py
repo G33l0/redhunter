@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                   ║
-║  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗  ║
-║  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗ ║
-║  ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝ ║
-║  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗ ║
-║  ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║ ║
-║  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝ ║
-║                                                                                   ║
-║                REDHUNTER — Web Vulnerability & Recon Framework  v1.3              ║
-║         Author : g33l0  |  Telegram : @x0x0h33l0  |  Authorized Use Only          ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║    ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗   ║
+║    ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗  ║
+║    ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝  ║
+║    ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗  ║
+║    ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║  ║
+║    ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝  ║
+║                                                                                      ║
+║                REDHUNTER — Web Vulnerability & Recon Framework  v1.3                 ║
+║           Author : g33l0  |  Telegram : @x0x0h33l0  |  Authorized Use Only           ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 
   AUTHORIZED USE ONLY — For use on systems you own or have explicit
   written authorization to test. Unauthorized use is illegal.
@@ -87,18 +87,18 @@ TG_HANDLE = "@x0x0h33l0"
 DB_PATH   = "redhunter_state.db"
 
 BANNER = f"""[bold red]
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                   ║
-║  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗  ║
-║  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗ ║
-║  ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝ ║
-║  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗ ║
-║  ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║ ║
-║  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝ ║
-║                                                                                   ║
-║        [bold white]  ░▒▓ REDHUNTER — Web Vulnerability & Recon Framework  v{VERSION} ▓▒░  [/bold white][bold red]          ║
-║        [bold yellow]  Author : {AUTHOR}[/bold yellow][bold red]  |  [bold green]Telegram : {TG_HANDLE}[/bold green][bold red]  |  [dim red]Authorized Use Only[/dim red][bold red]         ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝[/bold red]"""
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║    ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗   ║
+║    ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗  ║
+║    ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝  ║
+║    ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗  ║
+║    ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║  ║
+║    ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝  ║
+║                                                                                      ║
+║           [bold white]  ░▒▓ REDHUNTER — Web Vulnerability & Recon Framework  v{VERSION} ▓▒░  [/bold white][bold red]          ║
+║           [bold yellow]  Author : {AUTHOR}[/bold yellow][bold red]  |  [bold green]Telegram : {TG_HANDLE}[/bold green][bold red]  |  [dim red]Authorized Use Only[/dim red][bold red]         ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝[/bold red]"""
 
 # ─── SCAN MODULES ─────────────────────────────────────────────────────────────
 # Each module is a named group of paths. The engine checks ALL enabled modules.
@@ -1325,14 +1325,14 @@ SAP_FINGERPRINTS: list = [
         "surface":     "sap-admin",
         "body_signatures": [
             r"SAP\s+Solution\s+Manager",           # Product name
-            r"SOLMAN_SETUP",                       # SolMan-specific transaction
-            r'href=["\'][^"\']*\/solman\/',        # Internal SolMan links
+            r"SOLMAN_SETUP",                       # SolMan-specific transaction code
+            r'href=["\'][^"\']*\/solman\/',        # Internal SolMan links in HTML
             r"lmservice",                          # Landscape Management service
             r"diagnostic[_\s]agent",               # SolMan diagnostic agent
-            r"SolMan\b",                           # Abbreviated product name in body
+            r"com\.sap\.sm\.",                     # SolMan Java package namespace (unique)
             r"solman_admin",                       # Admin role reference
-            r"wily\s+introscope",                  # SolMan Introscope agent
-            r"SAP\s+Landscape\s+Management",       # Alternate product reference
+            r"wily\s+introscope",                  # SolMan Introscope monitoring agent
+            r"SAP\s+Landscape\s+Management",       # Alternate product name
         ],
         "confirm_absent": [
             # Block generic server pages that would give a false 200
@@ -2239,12 +2239,20 @@ class TelegramNotifier:
         Send a single Telegram message. Thread-safe, rate-limited.
         Error logging goes to stderr — NOT the Rich console — because Rich is
         not thread-safe when called from a background thread during Progress rendering.
+
+        RATE-LIMIT DESIGN: compute sleep duration inside the lock (atomic read of
+        _last_send), but perform the actual sleep OUTSIDE the lock.  Sleeping while
+        holding a lock would block every other caller for the full sleep duration —
+        a classic lock-under-sleep bug.
+
+        _last_send is updated unconditionally after every HTTP attempt (success OR
+        failure) so that a 429 rate-limit response still backs off the next send.
         """
-        # Enforce rate limit — Telegram allows ~30 msg/s, we use 20/s max
+        # Compute required sleep outside any critical section, then sleep lock-free
         with self._lock:
-            elapsed = time.monotonic() - self._last_send
-            if elapsed < self._TG_RATE_DELAY:
-                time.sleep(self._TG_RATE_DELAY - elapsed)
+            to_sleep = max(0.0, self._TG_RATE_DELAY - (time.monotonic() - self._last_send))
+        if to_sleep > 0:
+            time.sleep(to_sleep)
 
         # Hard length guard — Telegram silently drops messages over 4096 chars
         if len(text) > self._TG_MAX_LEN:
@@ -2254,28 +2262,25 @@ class TelegramNotifier:
             resp = requests.post(
                 f"{self._base}/sendMessage",
                 json={"chat_id": self.chat_id, "text": text, "parse_mode": "HTML"},
-                timeout=15
+                timeout=15,
             )
+            # Always stamp _last_send — even on 400/429 — so the next call backs off
             with self._lock:
                 self._last_send = time.monotonic()
             if resp.status_code == 200:
                 return True
-            # Log failure to stderr (safe from any thread, doesn't touch Rich)
-            import sys as _sys
+            # 400 usually = malformed HTML in our message; log full body to help debug
             print(
-                f"[RedHunter] Telegram HTTP {resp.status_code}: {resp.text[:120]}",
-                file=_sys.stderr
+                f"[RedHunter] Telegram HTTP {resp.status_code}: {resp.text[:200]}",
+                file=sys.stderr,
             )
             return False
         except requests.exceptions.ConnectionError:
-            import sys as _sys
-            print("[RedHunter] Telegram: network unreachable.", file=_sys.stderr)
+            print("[RedHunter] Telegram: network unreachable.", file=sys.stderr)
         except requests.exceptions.Timeout:
-            import sys as _sys
-            print("[RedHunter] Telegram: request timed out.", file=_sys.stderr)
+            print("[RedHunter] Telegram: request timed out (15s).", file=sys.stderr)
         except Exception as e:
-            import sys as _sys
-            print(f"[RedHunter] Telegram error: {e}", file=_sys.stderr)
+            print(f"[RedHunter] Telegram unexpected error: {e}", file=sys.stderr)
         return False
 
     def send_finding(self, env: "ExposedEnv", target: str, is_new: bool = True) -> bool:
@@ -2365,15 +2370,24 @@ class TelegramNotifier:
         return self._send(msg)
 
     def send_vuln_finding(self, vf: "VulnFinding") -> bool:
-        """Send Telegram alert for a confirmed vulnerable plugin surface."""
+        """Send Telegram alert for a confirmed vulnerable plugin or SAP surface."""
         emoji  = {"CRITICAL": "🔴", "HIGH": "🟠", "MEDIUM": "🟡", "LOW": "🟢"}.get(vf.severity, "⚪")
         now_ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
         refs   = "\n".join(f"  • {self._e(r)}" for r in vf.references[:3]) or "  • No public references"
+
+        # surface_line: only show if a URL is available; no trailing newline when empty
         surface_line = (
             f"\n🔌 <b>Surface URL:</b> <code>{self._e(vf.surface_url)}</code>"
             if vf.surface_url else ""
         )
-        # All dynamic content escaped — descriptions often contain "<" (e.g. "version < 6.9")
+
+        # fixed_in display: numeric versions get "≥ v" prefix; SAP/custom gets plain text
+        if vf.fixed_in and vf.fixed_in[0].isdigit():
+            fixed_display = f"≥ v{self._e(vf.fixed_in)}"
+        else:
+            fixed_display = self._e(str(vf.fixed_in)).replace("vendor-patch", "Apply vendor patch")
+
+        # All dynamic content passed through _e() — descriptions contain "<" (e.g. "< 6.9")
         msg = (
             f"🆕 <b>VULNERABILITY DETECTED</b>\n"
             f"{emoji} <b>{self._e(vf.severity)} — {self._e(vf.cve)}</b>\n"
@@ -2381,12 +2395,12 @@ class TelegramNotifier:
             f"🎯 <b>Target:</b> <code>{self._e(vf.target)}</code>\n"
             f"🔌 <b>Plugin:</b> <code>{self._e(vf.plugin)}</code>\n"
             f"📦 <b>Installed:</b> v{self._e(vf.installed_version)}  →  "
-            f"<b>Fixed in:</b> {'≥ v' + self._e(vf.fixed_in) if vf.fixed_in and vf.fixed_in[0].isdigit() else self._e(vf.fixed_in).replace('vendor-patch', 'Apply vendor patch')}\n"
-            f"📊 <b>CVSS:</b> {self._e(vf.cvss)}  |  🏷 <b>Surface:</b> {self._e(vf.surface)}\n"
+            f"<b>Fixed in:</b> {fixed_display}\n"
+            f"📊 <b>CVSS:</b> {self._e(str(vf.cvss))}  |  🏷 <b>Surface:</b> {self._e(vf.surface)}\n"
             f"⏱ <b>Detected:</b> {now_ts}\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
             f"📋 <b>Title:</b> {self._e(vf.title)}\n"
-            f"\n📝 <b>Description:</b>\n<i>{self._e(vf.description[:350])}</i>\n"
+            f"\n📝 <b>Description:</b>\n<i>{self._e(vf.description[:350])}</i>"
             f"{surface_line}\n"
             f"\n✅ <b>Recommended Action:</b>\n<i>{self._e(vf.recommend)}</i>\n"
             f"\n🔗 <b>References:</b>\n{refs}\n"
@@ -2395,10 +2409,18 @@ class TelegramNotifier:
         return self._send(msg)
 
     def test_connection(self) -> bool:
-        return self._send(
-            f"✅ <b>RedHunter v{VERSION}</b> — Telegram integration active.\n"
-            f"Authored by {self._e(AUTHOR)} | {self._e(TG_HANDLE)}"
-        )
+        """Send a test ping to verify bot token and chat ID are valid.
+        Returns True on success, False on any failure (network or API error).
+        Never raises — safe to call at startup before scan begins."""
+        try:
+            return self._send(
+                f"✅ <b>RedHunter v{VERSION}</b> — Telegram integration active.\n"
+                f"🤖 Chat ID: <code>{self._e(self.chat_id)}</code>\n"
+                f"<i>Authored by {self._e(AUTHOR)} | {self._e(TG_HANDLE)}</i>"
+            )
+        except Exception as e:
+            print(f"[RedHunter] Telegram test_connection error: {e}", file=sys.stderr)
+            return False
 
 
 # ─── SCAN ENGINE ──────────────────────────────────────────────────────────────
@@ -2418,13 +2440,19 @@ class RedHunter:
         self.notifier: Optional[TelegramNotifier] = None
         if self.args.tg_token and self.args.tg_chat:
             self.notifier = TelegramNotifier(self.args.tg_token, self.args.tg_chat)
-        # Background queues — keep scan threads non-blocking
+        # Background queues — keep scan threads non-blocking.
+        # The TG worker thread is only started when Telegram is actually configured.
+        # Starting it unconditionally wastes a thread and means close() must always
+        # drain the queue even on runs with no Telegram token.
         self._tg_queue    = queue.Queue()
         self._print_queue = queue.Queue()
-        self._tg_worker   = threading.Thread(
-            target=self._tg_drain, daemon=True, name="tg-notifier"
-        )
-        self._tg_worker.start()
+        if self.notifier:
+            self._tg_worker: Optional[threading.Thread] = threading.Thread(
+                target=self._tg_drain, daemon=True, name="tg-notifier"
+            )
+            self._tg_worker.start()
+        else:
+            self._tg_worker = None
 
     def _build_session(self) -> requests.Session:
         from requests.adapters import HTTPAdapter
@@ -2492,10 +2520,9 @@ class RedHunter:
         return origin.rstrip("/")
 
     def _looks_like_env(self, text: str) -> bool:
-        # Strip BOM (Byte Order Mark) — Windows editors add \ufeff to files.
-        # Without stripping it, the HTML check and KEY=VALUE scan both fail
-        # on the first character of an otherwise valid .env file.
-        # Strip BOM (Byte Order Mark) — Windows editors add these to .env files
+        # Strip BOM (Byte Order Mark) — Windows editors prepend these to files.
+        # Without stripping, the HTML check and KEY=VALUE scan both fail on
+        # the first character of an otherwise valid .env file.
         for _bom in ('\ufeff', '\ufffe', '\xef\xbb\xbf'):
             if text.startswith(_bom):
                 text = text[len(_bom):]
@@ -2923,14 +2950,15 @@ class RedHunter:
             except Exception as _tg_exc:
                 # Bare except is intentional: this thread MUST NOT crash.
                 # Log to stderr (safe from any thread) — not Rich which is not thread-safe.
-                import sys as _sys
-                print(f"[RedHunter] TG worker error: {_tg_exc}", file=_sys.stderr)
+                print(f"[RedHunter] TG worker error: {_tg_exc}", file=sys.stderr)
             finally:
                 self._tg_queue.task_done()
 
     def _tg_notify(self, fn, *args, **kwargs):
-        """Non-blocking: enqueue a Telegram call for the background worker."""
-        self._tg_queue.put((fn, args, kwargs))
+        """Non-blocking: enqueue a Telegram call for the background worker.
+        No-op if the TG worker was not started (Telegram not configured)."""
+        if self._tg_worker is not None:
+            self._tg_queue.put((fn, args, kwargs))
 
     def scan_target(self, target: str) -> ScanResult:
         # Session is created lazily by _get_session() — works for both outer
@@ -3182,13 +3210,16 @@ class RedHunter:
         return self.results
 
     def close(self):
-        # Drain Telegram queue then stop worker cleanly
-        try:
-            self._tg_queue.put(None)  # sentinel: signals worker to stop
-            self._tg_queue.join()     # blocks until all items incl. sentinel done
-            self._tg_worker.join(timeout=5)
-        except Exception:
-            pass
+        # Drain the Telegram queue then cleanly stop the worker thread.
+        # Only do this if the worker was actually started (i.e. Telegram configured).
+        # Calling .join() on a None reference or a never-started thread would raise.
+        if self._tg_worker is not None:
+            try:
+                self._tg_queue.put(None)          # sentinel: tells worker to exit
+                self._tg_queue.join()              # wait until queue fully drained
+                self._tg_worker.join(timeout=5)    # reap the thread
+            except Exception:
+                pass
         self.state_db.close()
         # Close this thread's local session if it exists
         try:
