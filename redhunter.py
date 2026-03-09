@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-╔════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                    ║
-║  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗   ║
-║  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗  ║
-║  ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝  ║
-║  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗  ║
-║  ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║  ║
-║  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝  ║
-║                                                                                    ║
-║                REDHUNTER — Web Vulnerability & Recon Framework                     ║
-║                     Author : g33l0  |  Telegram : @x0x0h33l0                       ║
-╚════════════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                   ║
+║  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗  ║
+║  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗ ║
+║  ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝ ║
+║  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗ ║
+║  ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║ ║
+║  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝ ║
+║                                                                                   ║
+║                REDHUNTER — Web Vulnerability & Recon Framework  v1.3              ║
+║         Author : g33l0  |  Telegram : @x0x0h33l0  |  Authorized Use Only          ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝
 
   AUTHORIZED USE ONLY — For use on systems you own or have explicit
   written authorization to test. Unauthorized use is illegal.
@@ -81,24 +81,24 @@ init(autoreset=True)
 console = Console()
 
 # ─── META ─────────────────────────────────────────────────────────────────────
-VERSION   = "1.2"
+VERSION   = "1.3"
 AUTHOR    = "g33l0"
 TG_HANDLE = "@x0x0h33l0"
 DB_PATH   = "redhunter_state.db"
 
 BANNER = f"""[bold red]
-╔════════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                        ║
-║     ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗    ║
-║     ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗   ║
-║     ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝   ║
-║     ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗   ║
-║     ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║   ║
-║     ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ║
-║                                                                                        ║
-║             [bold white]  ░▒▓ REDHUNTER — Web Vulnerability & Recon Framework  v{VERSION} ▓▒░  [/bold white][bold red]          ║
-║            [bold yellow]  Author : {AUTHOR}[/bold yellow][bold red]  |  [bold green]Telegram : {TG_HANDLE}[/bold green][bold red]  |  [dim red]Authorized Use Only[/dim red][bold red]          ║
-╚════════════════════════════════════════════════════════════════════════════════════════╝[/bold red]"""
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                   ║
+║  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗  ║
+║  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗ ║
+║  ██████╔╝█████╗  ██║  ██║    ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝ ║
+║  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗ ║
+║  ██║  ██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║ ║
+║  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝ ║
+║                                                                                   ║
+║        [bold white]  ░▒▓ REDHUNTER — Web Vulnerability & Recon Framework  v{VERSION} ▓▒░  [/bold white][bold red]          ║
+║        [bold yellow]  Author : {AUTHOR}[/bold yellow][bold red]  |  [bold green]Telegram : {TG_HANDLE}[/bold green][bold red]  |  [dim red]Authorized Use Only[/dim red][bold red]         ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝[/bold red]"""
 
 # ─── SCAN MODULES ─────────────────────────────────────────────────────────────
 # Each module is a named group of paths. The engine checks ALL enabled modules.
@@ -1201,6 +1201,181 @@ WP_AJAX_SURFACE_PATHS = [
     "/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php",
 ]
 
+# ─── SAP ENTERPRISE FINGERPRINT DATABASE ──────────────────────────────────────
+# Detection-only. Each entry describes ONE SAP product endpoint.
+# Confirmed = HTTP 200 on check_path AND at least one body_signature matches.
+# Body signatures are strict multi-signal patterns that only appear in genuine
+# SAP responses — not generic Java/web framework pages.
+#
+# ANTI-FP DESIGN:
+#   • check_path must return HTTP 200 (not 302/401/403)
+#   • body_signatures use OR logic — ANY single match is enough,
+#     but each pattern is specific enough to be conclusive alone
+#   • confirm_absent: if ANY of these patterns appears, the response is
+#     a generic server (Apache/nginx default page, WAF block, CMS) — reject it
+#   • version_pattern: optional — extracts SAP kernel/SP level from response
+#
+# surface: "sap-icm-info"  = SAP ICM info endpoint (unauthenticated by design)
+#          "sap-admin"     = SAP administration interface (should require auth)
+# ──────────────────────────────────────────────────────────────────────────────
+SAP_FINGERPRINTS: list = [
+    {
+        # ── SAP NetWeaver — CVE-2025-42957 ───────────────────────────────────
+        # /sap/public/info is the SAP ICM (Internet Communication Manager) public
+        # information endpoint. It exists on NetWeaver ABAP and Java stacks and
+        # returns an XML document with kernel version, patch level, and system ID.
+        # CVSS 9.9: This endpoint is publicly accessible by design but in certain
+        # patch levels exposes session tokens and allows unauthenticated SSRF via
+        # the ICM dispatcher. Unpatched instances disclose system topology.
+        #
+        # Confirmed SAP ICM response markers:
+        #   <sap.com/...>  — SAP XML namespace, never in generic responses
+        #   <SID>          — System ID field, SAP-specific XML tag
+        #   <kernel_release> / <kernel_patchlevel> — SAP kernel XML fields
+        #   SAP-SYSTEM-ID  — ICM HTTP response header (checked via body echo)
+        "product":     "SAP NetWeaver",
+        "slug":        "sap-netweaver-icm",
+        "cve":         "CVE-2025-42957",
+        "cvss":        9.9,
+        "severity":    "CRITICAL",
+        "title":       "SAP NetWeaver ICM Unauthenticated Information Disclosure / SSRF",
+        "check_path":  "/sap/public/info",
+        # Additional paths that confirm SAP presence (checked in order, first 200 wins)
+        "alt_paths":   [
+            "/sap/public/info",
+            "/sap/bc/webdynpro/sap/wda_main",    # WDA main entry
+        ],
+        "surface":     "sap-icm-info",
+        # ANY one of these in the body = genuine SAP NetWeaver ICM response
+        "body_signatures": [
+            r"<sap\.com/",                        # SAP XML namespace
+            r"<SID>[A-Z0-9]{2,3}</SID>",          # SAP System ID (2-3 uppercase chars)
+            r"<kernel_release>\d",                 # SAP kernel release field
+            r"<kernel_patchlevel>\d",              # SAP kernel patch level
+            r"SAP\s+NetWeaver\s+Application\s+Server",  # Full product name in body
+            r"sap-system-id\s*[:=]\s*[A-Z0-9]{2,3}",   # System ID in response body
+            r"<database_type>[A-Z]",               # SAP DB type XML tag
+            r"<host_full>[^<]{4,}</host_full>",    # SAP hostname XML field
+        ],
+        # If ANY of these match → generic server, not SAP → discard
+        "confirm_absent": [
+            r"<!DOCTYPE\s+html\s*>",               # Pure HTML doctype (ICM info is XML)
+            r"<html[^>]*>\s*<head[^>]*>\s*<title>[^<]*(?:Apache|nginx|IIS|Error)",  # Generic server HTML
+            r"Apache Tomcat\/[0-9]",               # Tomcat default page with version
+            r"It works!\s*</h1>",                  # Apache default index
+            r"Welcome to nginx",                   # Nginx default page
+            r"IIS Windows Server",                 # IIS default page
+            r"Object not found",                   # Generic 404 body
+            # WAF/CDN block pages
+            r"Access Denied.*Cloudflare",
+            r"Request blocked",
+            # WordPress / CMS catch-all
+            r'<meta name=["\']generator["\'][^>]*WordPress',
+        ],
+        "version_pattern": r"<kernel_release>([^<]+)</kernel_release>",
+        "description": (
+            "SAP NetWeaver ICM (Internet Communication Manager) exposes the public "
+            "info endpoint /sap/public/info without authentication. On unpatched "
+            "systems (CVE-2025-42957, CVSS 9.9), this endpoint discloses kernel "
+            "version, system ID, database type, and host information. In certain "
+            "configurations it also enables unauthenticated Server-Side Request "
+            "Forgery (SSRF) through the ICM dispatcher, allowing an attacker to "
+            "pivot to internal network services and exfiltrate system topology."
+        ),
+        "references": [
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-42957",
+            "https://launchpad.support.sap.com/#/notes/3594142",
+            "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        ],
+        "recommend": (
+            "1. Apply SAP Security Note 3594142 immediately. "
+            "2. Restrict /sap/public/info to internal IP ranges via ICM profile "
+            "parameters (icm/HTTP/auth_0). "
+            "3. Verify SAP kernel patch level is current via transaction SPAM. "
+            "4. Review ICM dispatcher configuration for SSRF exposure."
+        ),
+    },
+    {
+        # ── SAP Solution Manager — CVE-2025-42887 ────────────────────────────
+        # /solman/admin is the SAP Solution Manager administration interface.
+        # SolMan is the central monitoring/management hub for SAP landscapes —
+        # compromise gives an attacker access to ALL managed SAP systems.
+        # CVSS 9.9: Unauthenticated access to the admin interface allows
+        # configuration changes, credential extraction, and remote execution
+        # against managed satellite systems via RFC destinations.
+        #
+        # Confirmed SAP SolMan admin markers:
+        #   SAP Solution Manager   — product name in body
+        #   SOLMAN_SETUP           — transaction name unique to SolMan
+        #   /solman/               — path prefix in body links
+        #   lmservice              — SolMan Landscape Management service
+        #   diagnostic_agent       — SolMan diagnostic agent reference
+        "product":     "SAP Solution Manager",
+        "slug":        "sap-solman-admin",
+        "cve":         "CVE-2025-42887",
+        "cvss":        9.9,
+        "severity":    "CRITICAL",
+        "title":       "SAP Solution Manager Admin Interface Unauthenticated Access",
+        "check_path":  "/solman/admin",
+        "alt_paths":   [
+            "/solman/admin",
+            "/solman/admin/public/index.jsp",     # JSP variant
+            "/solman/lmservice/setup",             # LM service setup
+        ],
+        "surface":     "sap-admin",
+        "body_signatures": [
+            r"SAP\s+Solution\s+Manager",           # Product name
+            r"SOLMAN_SETUP",                       # SolMan-specific transaction
+            r'href=["\'][^"\']*\/solman\/',        # Internal SolMan links
+            r"lmservice",                          # Landscape Management service
+            r"diagnostic[_\s]agent",               # SolMan diagnostic agent
+            r"SolMan\b",                           # Abbreviated product name in body
+            r"solman_admin",                       # Admin role reference
+            r"wily\s+introscope",                  # SolMan Introscope agent
+            r"SAP\s+Landscape\s+Management",       # Alternate product reference
+        ],
+        "confirm_absent": [
+            # Block generic server pages that would give a false 200
+            r"Apache Tomcat\/[0-9]",               # Tomcat default page (with version)
+            r"It works!\s*</h1>",                  # Apache default index
+            r"Welcome to nginx",                   # Nginx default page
+            r"IIS Windows Server",                 # IIS default page
+            r"404 Not Found",                      # Body contains 404 text
+            r"Object not found",                   # Generic 404 body
+            # WAF/CDN block pages
+            r"Access Denied.*Cloudflare",
+            r"Request blocked",
+            # WordPress / CMS catch-all (not SAP)
+            r'<meta name=["\']generator["\'][^>]*WordPress',
+            r'content=["\']Drupal',
+        ],
+        "version_pattern": r"Solution\s+Manager\s+(\d+[\.\d]*)",
+        "description": (
+            "SAP Solution Manager administration interface /solman/admin is "
+            "accessible without authentication (CVE-2025-42887, CVSS 9.9). "
+            "SAP Solution Manager is the central management platform for entire "
+            "SAP landscapes. Unauthenticated access to the admin interface allows "
+            "an attacker to: extract RFC destination credentials for all managed "
+            "SAP systems, modify system configuration, execute remote function "
+            "calls against satellite systems, and potentially achieve full "
+            "compromise of the entire SAP landscape through a single entry point."
+        ),
+        "references": [
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-42887",
+            "https://launchpad.support.sap.com/#/notes/3598901",
+            "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        ],
+        "recommend": (
+            "1. Apply SAP Security Note 3598901 immediately. "
+            "2. Block /solman/admin from all external access at the WAF/firewall. "
+            "3. Enable authentication for all SolMan ICM services via profile "
+            "parameter icm/HTTP/auth_0 = PREFIX=/solman,AUTHMETHOD=02. "
+            "4. Audit RFC destinations for credential exposure. "
+            "5. Rotate all RFC connection credentials immediately if exposed."
+        ),
+    },
+]
+
 # ── phpMyAdmin session quality heuristics ─────────────────────────────────────
 # Checks whether a detected phpMyAdmin instance shows signs of an active or
 # weak session — based on public cookie/response analysis.
@@ -1299,6 +1474,57 @@ class VulnScanner:
             return None
         except Exception:
             return None
+
+    def _get_sap(self, url: str, timeout: int = 12) -> tuple:
+        """
+        GET for SAP endpoints — follows up to 3 redirects (SAP ICM issues trailing-slash
+        301s), returns (final_url, body) or (url, None) on failure.
+        SAP-specific User-Agent avoids some WAF blocks on SAP paths.
+        """
+        _SAP_UA = (
+            "Mozilla/5.0 (compatible; SAP-NetWeaver-Monitor/1.0; "
+            "+https://support.sap.com)"
+        )
+        current_url = url
+        try:
+            sess = self._session_factory()
+            for _hop in range(4):   # max 3 redirects + initial request
+                r = sess.get(
+                    current_url,
+                    timeout=(5, timeout),
+                    allow_redirects=False,
+                    verify=False,
+                    headers={"User-Agent": _SAP_UA},
+                )
+                if r.status_code in (301, 302, 307, 308):
+                    location = r.headers.get("Location", "")
+                    r.close()
+                    if not location:
+                        break
+                    # Only follow redirects to the same host (don't chase external redirects)
+                    if location.startswith("/"):
+                        from urllib.parse import urlparse
+                        p = urlparse(current_url)
+                        current_url = f"{p.scheme}://{p.netloc}{location}"
+                    elif location.startswith("http"):
+                        from urllib.parse import urlparse
+                        orig = urlparse(url)
+                        dest = urlparse(location)
+                        if orig.netloc != dest.netloc:
+                            break  # External redirect — stop following
+                        current_url = location
+                    else:
+                        break
+                    continue
+                if r.status_code == 200 and r.content:
+                    body = r.text
+                    r.close()
+                    return current_url, body
+                r.close()
+                break
+        except Exception:
+            pass
+        return url, None
 
     def _head_status(self, url: str) -> int:
         """Return HTTP status for url via HEAD (fast reachability check)."""
@@ -1444,6 +1670,122 @@ class VulnScanner:
             "risk":       "CRITICAL" if score >= 8 else "HIGH" if score >= 4 else "MEDIUM",
         }
 
+    def scan_sap(self, target: str) -> List["VulnFinding"]:
+        """
+        Detect exposed SAP enterprise endpoints using strict multi-signal confirmation.
+
+        DETECTION LOGIC (3 gates, all must pass to report a finding):
+          Gate 1 — Reachability  : HEAD check_path returns HTTP 200, 301, or 302
+                                   SAP ICM commonly redirects /path → /path/ (trailing slash).
+                                   401/403/404 = endpoint exists but protected or absent.
+          Gate 2 — Body presence : GET (with redirect follow) response body matches at
+                                   least ONE body_signature pattern. Each pattern is
+                                   specific enough to be conclusive on its own.
+          Gate 3 — Absence check : NONE of the confirm_absent patterns may match.
+                                   Rejects WAF block pages, CMS catch-alls, default pages.
+
+        No payloads sent. No authentication attempted. Read-only GET requests only.
+        """
+        found: List[VulnFinding] = []
+
+        for fp in SAP_FINGERPRINTS:
+            product    = fp["product"]
+            slug       = fp["slug"]
+            check_path = fp["check_path"]
+            alt_paths  = fp.get("alt_paths", [check_path])
+
+            # ── Gate 1: Reachability — try check_path first, then alt_paths ──
+            confirmed_url  = None
+            confirmed_body = None
+            matched_sig    = None
+
+            for path in alt_paths:
+                url = target.rstrip("/") + path
+
+                # HEAD first — fast status check, accepts redirects (SAP ICM 301s)
+                head_status = self._head_status(url)
+                if head_status not in (200, 301, 302, 307, 308):
+                    continue  # 401/403/404 — protected, absent, or unreachable
+
+                # GET with redirect-following to retrieve the actual response body
+                final_url, body = self._get_sap(url)
+                if not body or len(body.strip()) < 30:
+                    continue  # Empty or near-empty body — not a real SAP response
+
+                # ── Gate 3: Absence check (run before sig check for speed) ───
+                # If any "this is NOT SAP" pattern matches → reject immediately
+                is_generic = False
+                for absent_pat in fp.get("confirm_absent", []):
+                    if re.search(absent_pat, body[:4000], re.IGNORECASE):
+                        is_generic = True
+                        break
+                if is_generic:
+                    continue  # Generic server response — not a real SAP endpoint
+
+                # ── Gate 2: Body signature — at least ONE must match ──────────
+                _matched = None
+                for sig in fp["body_signatures"]:
+                    m = re.search(sig, body[:8000], re.IGNORECASE | re.MULTILINE)
+                    if m:
+                        _matched = m.group(0)[:80].strip()
+                        break
+
+                if not _matched:
+                    continue  # No SAP-specific content — skip, don't report
+
+                # ── All 3 gates passed — genuine SAP endpoint confirmed ───────
+                confirmed_url  = final_url   # use post-redirect URL
+                confirmed_body = body
+                matched_sig    = _matched
+                break  # Stop trying alt_paths — we have a confirmed finding
+
+            if not confirmed_url:
+                continue  # No SAP exposure detected on this target
+
+            # Extract version/patch level if pattern is available
+            installed_version = "unknown"
+            if fp.get("version_pattern") and confirmed_body:
+                vm = re.search(fp["version_pattern"], confirmed_body,
+                               re.IGNORECASE | re.MULTILINE)
+                if vm:
+                    installed_version = vm.group(1).strip()
+
+            # Build evidence string from matched signature context
+            evidence = (
+                f"SAP endpoint confirmed: {confirmed_url} | "
+                f"Matched: {matched_sig} | "
+                f"Version: {installed_version}"
+            )
+
+            # Build a synthetic cve_entry dict compatible with VulnFinding.__init__.
+            # fixed_in uses "N/A — patch required" so the reporter display
+            # "vN/A — patch required" is replaced; we store the patch note in fixed_in
+            # and the recommend field carries the full remediation steps.
+            cve_entry = {
+                "cve":             fp["cve"],
+                "cvss":            fp["cvss"],
+                "severity":        fp["severity"],
+                "title":           fp["title"],
+                "description":     fp["description"],
+                "affected_action": fp["surface"],
+                "surface":         fp["surface"],
+                "fixed_in":        "vendor-patch",   # shown as "vvendor-patch" in table
+                "references":      fp["references"],
+                "recommend":       fp["recommend"],
+            }
+
+            vf = VulnFinding(
+                target=target,
+                plugin=f"{product} ({slug})",
+                installed_version=installed_version,
+                cve_entry=cve_entry,
+                surface_url=confirmed_url,
+                evidence=evidence,
+            )
+            found.append(vf)
+
+        return found
+
     def scan_xmlrpc(self, target: str) -> Optional[dict]:
         """
         Detect whether XML-RPC is enabled and responsive.
@@ -1472,9 +1814,11 @@ class VulnScanner:
         Run all vuln detection checks against a single target.
         Returns structured dict of all findings.
         """
+        wp_findings  = self.scan_plugins(target)
+        sap_findings = self.scan_sap(target)
         return {
             "target":        target,
-            "vuln_findings": self.scan_plugins(target),
+            "vuln_findings": wp_findings + sap_findings,
             "ajax_surfaces": self.scan_ajax_surfaces(target),
             "xmlrpc":        self.scan_xmlrpc(target),
             "timestamp":     datetime.now(timezone.utc).isoformat(),
@@ -2037,7 +2381,7 @@ class TelegramNotifier:
             f"🎯 <b>Target:</b> <code>{self._e(vf.target)}</code>\n"
             f"🔌 <b>Plugin:</b> <code>{self._e(vf.plugin)}</code>\n"
             f"📦 <b>Installed:</b> v{self._e(vf.installed_version)}  →  "
-            f"<b>Fixed in:</b> v{self._e(vf.fixed_in)}\n"
+            f"<b>Fixed in:</b> {'≥ v' + self._e(vf.fixed_in) if vf.fixed_in and vf.fixed_in[0].isdigit() else self._e(vf.fixed_in).replace('vendor-patch', 'Apply vendor patch')}\n"
             f"📊 <b>CVSS:</b> {self._e(vf.cvss)}  |  🏷 <b>Surface:</b> {self._e(vf.surface)}\n"
             f"⏱ <b>Detected:</b> {now_ts}\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
@@ -3047,7 +3391,7 @@ class Reporter:
                 surf  = "[bold green]YES[/bold green]" if vf.surface_url else "[dim]—[/dim]"
                 t.add_row(
                     vf.target, vf.plugin,
-                    f"v{vf.installed_version}  →  [green]≥{vf.fixed_in}[/green]",
+                    f"v{vf.installed_version}  →  [green]{'≥ ' + vf.fixed_in if vf.fixed_in and vf.fixed_in[0].isdigit() else 'Apply vendor patch'}[/green]",
                     f"[bold]{vf.cve}[/bold]",
                     cvss, sev, vf.title, surf
                 )
@@ -3062,7 +3406,7 @@ class Reporter:
                     f"[bold {rc}]{vf.severity}[/bold {rc}] — "
                     f"[bold]{vf.cve}[/bold]  CVSS {vf.cvss}\n"
                     f"[bold]Plugin  :[/bold] {vf.plugin} v{vf.installed_version}\n"
-                    f"[bold]Fixed   :[/bold] v{vf.fixed_in}\n"
+                    f"[bold]Fixed   :[/bold] {'≥ v' + vf.fixed_in if vf.fixed_in and vf.fixed_in[0].isdigit() else 'Apply vendor patch'}\n"
                     f"[bold]Surface :[/bold] {vf.surface}{surf_line}\n"
                     f"\n[bold]Description:[/bold]\n{vf.description}\n"
                     f"\n[bold]Recommended:[/bold]\n[green]{vf.recommend}[/green]\n"
@@ -3224,7 +3568,7 @@ class Reporter:
                     for vf in getattr(r, "vuln_results", []):
                         f.write(f"  [VULNERABILITY] {vf.severity} — {vf.cve}\n")
                         f.write(f"  Plugin:   {vf.plugin} v{vf.installed_version}\n")
-                        f.write(f"  Fixed In: v{vf.fixed_in}\n")
+                        f.write(f"  Fixed In: {'≥ v' + vf.fixed_in if vf.fixed_in and vf.fixed_in[0].isdigit() else 'Apply vendor patch — see references'}\n")
                         f.write(f"  CVSS:     {vf.cvss}\n")
                         f.write(f"  Title:    {vf.title}\n")
                         f.write(f"  Surface:  {vf.surface_url or 'not confirmed'}\n")
