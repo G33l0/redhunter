@@ -1,4 +1,4 @@
-# RedHunter v1.1
+# RedHunter v1.3
 ### Web Vulnerability & Recon Framework
 
 ```
